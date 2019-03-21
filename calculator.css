@@ -1,0 +1,127 @@
+.calculator-exterior
+{
+	width: 450px;
+	height:700px;
+	background: #F9966B	;
+	color: #000	;
+	top: 75%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	bottom: 25%;
+}
+body
+{
+	background-image: url('background.png');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.calculator
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -40px;
+	
+}
+
+
+.calculator-exterior input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.calculator-exterior input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	color: black;
+	font-size: 18px;
+}
+
+.calculator-exterior input[type="button"]
+{
+	border: none;
+	outline:none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	margin-top:20px;
+}
+
+.calculator-exterior input[type="button"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.calculator-exterior a
+{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color:darkgrey;
+}
+
+.calculator-exterior a:hover
+{
+	color: #ffc107;
+}
+
+
+h1
+{ 
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
+
+label, select {
+	margin-top:5%;
+  
+  } 
+ 
+label,
+input,
+select {
+  font-size: 14px;
+  line-height: 2;
+  display: block;
+  
+  
+}
+input,
+select {
+  height: 1.75rem;
+
+  width: 100%;
+  
+  background-color: grey;
+  }
+
+label {
+     margin: 0;
+	padding: 0;
+    font-size:18px;
+    text-align: left;
+	line-height: 2px;
+	font-weight: bold;
+  }
+
+
+
+
+ 
+
+
