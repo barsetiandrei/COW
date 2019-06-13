@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Raport</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+      	        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+
+        <div class="status">Community Draft</div>
+      </div>
+      <h1>Cal-o-web</h1>
+    </header>
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          <a>Bârseti Andrei</a> &
+          <a>Nedelcu Andreea</a>
+          <h>Anul II, Grupa A6</h>
+        </dd>
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        Cal-o-web este o aplicație open source (<a href="https://github.com/barsetiandrei/COW">https://github.com/barsetiandrei/COW
+        </a>)  de monitorizare a caloriilor consumate zilnic.  Această aplicație a fost concepută
+        în scop pur didactic reprezentând un proiect în cadrul materiei Tehnologii Web. 
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+
+
+
+
+      <h2>Introducere</h2>
+      <p>
+        Cal-O-Web este o aplicație Web care permite utilizatorilor autentificați să-și monitorizeze caloriile consumate pe parcursul unei 
+		unități de timp (zi, săptămâna, lună, an) 
+		în funcție de ce au consumat în acea unitate de timp, astfel o accesare 
+        a aplicației propriu-zise necesită logarea utilizatorului. Implicit în cadrul aplicației un utilizator(logat)
+        va avea posibilitatea de a-și adăuga în funcție de masă(prânz,cină,etc.), alimentele consumate împreună cu toate caracteristicile lor
+		(calorii, carbohidrați, etc.).
+      </p>
+      <p>
+        Calculatorul vine ca și o funcționalitate a aplicației punând la dispoziție utilizatorului oportunitatea de a-și calcula numărul de calorii 
+		pe care ar trebui să le consume zilnic în funcție de activitatea sa fizică, greutate, înălțime și alte date pe care trebuie sa le introducă în formular.
+      </p>
+      <p>
+        La nivel înalt scopul acestei aplicații este de a:
+      </p>
+      <ul>
+        <li>pune la dispozitie utilizatorului o pagină cu statistici și cu sfaturi în legătură cu dieta sa </li>
+        <li>reprezenta o platformă unde utilizatorii își pot adăuga produsele consumate în fiecare zi </li>
+      </ul>
+
+    </section>
+    <section id="structure">
+      <!-- review? -->
+      <h2>Structura</h2>
+      <p>
+        Pagina de start<br>
+•	Va conține un buton de Start here care va accesa aplicația.<br>
+<br>
+        Pagina de pornire <br>
+•	Va conține câteva informații generale despre calorii și două butoane: unul pentru a face un cont nou, Register now, și unul pentru logare, Login.<br>
+<br>
+Pagina de înregistrare utilizator<br>
+
+•	Cerintele pentru înregistrare sunt urmatoarele: <br>
+• First Name<br>
+• Last Name<br>
+• E-mail(valid)<br>
+• Confirmare e-mail<br>
+•	O parolă <br>
+•	Confirmarea parolei<br>
+<br>
+Pagina de login utilizator<br>
+
+•	Cerintele pentru login sunt urmatoarele: <br>
+• E-mail<br>
+• Parola<br>
+
+<br>
+Pagina principala-My Daily Plan va conține<br>
+•	Header-ul care contine numele aplicatiei și o bară cu butoanele aplicației: My Calories Keeper, Calculator, Generate Report, Change Password, Sign Out<br>
+•	Tabele pentru a monitoriza caloriile consumate într-o zi pentru mic-dejun, prânz, cină și gustări. Sunt trei optiuni- Pick Food va adăuga un produs deja existent în baza de date; Add Food va adăuga un produs nou introdus manual de către utilizator; Remove va șterge un produs adăugat în tabel;<br>
+<br>
+Pagina Add Food<br>
+•	Pagina de unde utilizatorul va putea adăuga noi produse care nu sunt deja în baza de date. <br>
+•	Este necesară completarea tuturor câmpurilor pentru a adăuga un produs și anume: numele produsului,
+calorii, carbohidrati, grasimi, proteine, sodiu și zaharuri.<br>
+
+<br>
+Pagina My Calories Keeper<br>
+• Reprezintă pagina cu statisticile.<br>
+• Cuprinde și secțiunea cu sfaturile pe care utilizatorul le primește în funcție de caloriile consumate.<br>
+<br>
+Pagina de schimbare a parolei<br>
+• Este un form unde e necesară completarea a 3 câmpuri și anume: parola veche, parola nouă și confirmarea acesteia.<br>
+• Conține un buton pentru salvarea noii parole.<br>
+<br>
+Pagina Calculator<br>
+• Pune la dispozitie un calculator care după completarea câmpurilor cerute va genera numărul de calorii pe care utilizatorul ar trebui să le consume zilnic în funcție de opțiunile alese.<br>
+<br>
+
+      </p>
+      <section id="Root">
+        <!-- review? -->
+        <h3>Utilizatorul înregistrat</h3>
+	Se loghează pe aplicație folosind email-ul și parola. După ce s-a logat are următoarele drepturi: <br>
+-	își poate calcula numărul de calorii pe care ar trebui să le consume zilnic cu ajutorul calculatorului unde trebuie să introducă anumite date;<br>
+-	poate adăuga toate alimentele pe care le-a consumat în acea zi, căutând în baza de date sau introducând manual<br>
+-	are acces la situația caloriilor, cât a consumat total, cât mai poae consuma, etc; <br>
+-   are acces la statistici 
+-   poate primi sfaturi în legătură cu dieta sa în funcție de caloriile consumate și de ceea ce și-a propus el să realizeze în timp
+-	își poate schimba parola (doar dacă o cunoaște pe cea existentă);<br>
+-	generează rapoarte în formatul XML;<br>
+- <br>
+</section>
+
+<section id="article">
+        <!-- review? -->
+        <h3>Utilizator fără cont</h3>
+
+Utilizatorul fără cont va putea accesa doar o pagină cu câteva informații generale din cadrul aplicației. 
+Pentru a folosi în mod expres aplicația, acesta poate să își creeze un cont completând formularul de înregistrare.
+</section>
+
+<section id="hunk">
+        <!-- review? -->
+        <h3>Etapele dezvoltării proiectului</h3>
+
+1.  Alegerea proiectului <br>
+2.  Schițe pentru realizarea designului<br>
+3.  Crearea paginilor pentru front-end(html-uri & css-uri)<br>
+4.  Arhitectura aplicației(realizarea diagramelor C4, schema bazei de date)<br>
+5.  Realizarea tabelelor în baza de date<br>
+6.  Implementarea în PHP a funcționalităților proiectului<br>
+7.  Implementarea view-urilor pentru fiecare pagină<br>
+8.  Adăugare funcționalități AJAX<br>
+9.  Testarea aplicației<br>
+10. Deployment<br>
+	</section>
+      <section id="inline">
+          <!-- review? -->
+          <h4>Tehnologii utilizate</h4>
+
+Proiectul utilizează următoarele tehnologii:
+HTML5 - este un limbaj pentru structurarea și prezentarea conținutului pentru World Wide Web, o tehnologie nucleu pentru Internet propusă inițial pentru 
+software-ul Opera.<br>
+<br>
+CSS - (Cascading Style Sheets) este un standard pentru formatarea elementelor unui document HTML. Stilurile se pot atașa elementelor HTML prin intermediul 
+unor fișiere externe sau în cadrul documentului, prin elementul "style" și/sau atributul style. CSS se poate utiliza și pentru formatarea elementelor XHTML,
+ XML si SVGL<br>
+ <br>
+PHP - Hypertext Preprocessor. Folosit inițial pentru a produce pagini web dinamice, este folosit pe scară largă în dezvoltarea paginilor si aplicațiilor web.
+ Se folosește în principal înglobat în codul HTML, dar începând de la versiunea 4.3.0 se poate folosi și în mod „linie de comandă” (CLI), permițând crearea 
+ de aplicații independente. Este unul din cele mai importante limbaje de programare web open-source și server-side, existând versiuni disponibile pentru 
+ majoritatea web serverelor și pentru toate sistemele de operare. Conform statisticilor este instalat pe 20 de milioane de situri web și pe 1 milion de 
+ servere web. Este disponibil sub Licenṭa PHP ṣi Free Software Foundation îl consideră a fi un software liber.<br>
+<br>
+ MySQL pentru baza de date<br>
+</section>
+<section id="references">
+        <!-- review? -->
+        <h3>Baza de date</h3>
+•	users(id,firstname,lastname,email,password)<br>
+•	profile(id,uid,age,gender,height,weight,exercise,goal)<br>
+•	metrics(id,uid,date,calories,carbs,fat,protein,sodium,sugar)<br>
+•	foods(id,name,calories,carbs,fat,protein,sodium,sugar)<br>
+•	dailyplan(id,uid,breakfast,lunch,dinner,snacks)<br>
+
+</section>
+
+      <section id="interactive">
+        <!-- review? -->
+        <h3>Servicii</h3>
+
+1. Github<br>
+
+•	GitHub este un serviciu de găzduire web pentru proiecte de dezvoltare a software-ului care utilizează sistemul de control al versiunilor Git. GitHub 
+oferă planuri tarifare pentru depozite private și conturi gratuite pentru proiecte open source.<br>
+        <br>
+        <br>
+</section>
+</section>
+  </body>
+</html>
