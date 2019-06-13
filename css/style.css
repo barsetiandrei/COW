@@ -1,0 +1,179 @@
+*
+{
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+	min-height: 100%;
+}
+
+.hero
+{
+	background-image: linear-gradient(#c847f1, #380231);
+	
+	
+}
+
+.top-bar
+{
+	width:200px;
+	margin-bottom: -4.5px;
+	
+	
+}
+
+.top-bar img
+{
+	width: 200px;
+	margin-bottom: -4.5px;
+	
+}
+
+.top-button
+{
+	float: right;
+	margin-top: -45px;
+	
+	
+}
+
+.top-button a {
+	margin: 0 8px;
+	padding: 8px 20px;
+	border-radius: 50px;
+	background: #fff;
+	color: #333;
+	text-decoration: none !important;
+	border: 3px solid #fff;
+}
+
+.login-btn
+{
+	background: transparent !important;
+	color: #fff ! important;
+}
+ 
+.top-button a button
+{
+	background: #fff ! important;
+    color: #333 !important;
+}	
+
+
+body
+{
+	background-image: url('/images/backgroundfull.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+.title
+{
+	position: absolute;
+	margin-left: 0;
+	margin-top: -100px;
+}
+
+h1 {
+	color: #C12283;
+	font-size:50px;
+	margin-top: 200px;
+	margin-left:700px;
+	}
+	
+h2
+{
+	
+	color: #F535AA;
+	font-size:20px;
+	margin-top: 20px;
+	margin-left:780px;
+}
+
+h3
+{
+		text-align: justify;
+  text-justify: inter-word;
+	color: #F535AA;
+	font-size:20px;
+	margin-top: -105px;
+	margin-left:35px;
+		margin-right:50px;
+}
+
+h4
+{
+		text-align: justify;
+  text-justify: inter-word;
+	color: #F535AA;
+	font-size:20px;
+	margin-top: 40px;
+	margin-left:35px;
+		margin-right:50px;
+}
+
+h5
+{
+		text-align: justify;
+  text-justify: inter-word;
+	color: #F535AA;
+	font-size:20px;
+	margin-top: 40px;
+	margin-left:35px;
+	margin-right:50px;
+
+}
+h6
+{
+	text-align: justify;
+  text-justify: inter-word;
+	color: #F535AA;
+	font-size:20px;
+	margin-top: 40px;
+		margin-right:50px;
+		margin-left:35px;
+
+}
+
+
+.button
+{
+	margin-top:50px;
+	margin-left:900px;
+}
+
+.btn
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size:18px;
+	background-color:#F535AA ;
+	font-family: sans-serif;
+}
+
+.btn:hover
+{
+	background-color: #C12283;
+}
+	
+.text 
+{
+    position: absolute;
+	margin-left: 0px;
+	margin-top: -100px;
+	color: #C12283;
+	font-size: 15px;
+	margin-top: 200px;
+	margin-left:700px;
+
+}
+	
+
+	
+    	
+
+
