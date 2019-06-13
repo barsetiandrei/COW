@@ -16,10 +16,10 @@
 			header("Location: ../pages/calculator.php?error=empty");
 			exit();
 		} else {
-			$age = mysqli_real_escape_string($conn, strtolower($age));
+			$age = mysqli_real_escape_string($conn, $age);
 			$gender = mysqli_real_escape_string($conn, strtolower($gender));
-			$height = mysqli_real_escape_string($conn, strtolower($height));
-			$weight = mysqli_real_escape_string($conn, strtolower($weight));
+			$height = mysqli_real_escape_string($conn, $height);
+			$weight = mysqli_real_escape_string($conn, $weight);
 			$exercise = mysqli_real_escape_string($conn, strtolower($exercise));
 			$goal = mysqli_real_escape_string($conn, strtolower($goal));
 
